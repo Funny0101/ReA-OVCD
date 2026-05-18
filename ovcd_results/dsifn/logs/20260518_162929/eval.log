@@ -1,0 +1,32 @@
+======================================================================
+  Open-Vocabulary Change Detection Evaluation
+======================================================================
+  Dataset:      dsifn
+  Mode:         bcd
+  Classes (2): ['ground,road,vegetation,farmland', 'building,house,roof,urban structure']
+  Change Thresh:0.3 | Presence alpha: 1.2
+  BDWCD:        GLOBAL (τ=5.0, min_area=150)
+======================================================================
+[DSIFNDataset] Loaded 48 samples (mode=bcd)
+  T1: /archive/hot2/chj/data/datasets/DSIFN/A
+  T2: /archive/hot2/chj/data/datasets/DSIFN/B
+  Label: /archive/hot2/chj/data/datasets/DSIFN/label
+
+🚀 Starting evaluation on 48 samples...
+
+⏱️  Completed in 99.3s (2.07s/sample, processed=48, skipped=0)
+============================================================
+  Open-Vocabulary Change Detection Evaluation (BCD)
+============================================================
+  F1 Score:   67.79%
+  IoU:        51.27%
+  Precision:  62.28%
+  Recall:     74.36%
+  OA:         87.99%
+  Kappa:      60.47%
+  Samples:    48
+============================================================
+📄 Results saved to ./ovcd_results/dsifn/logs/20260518_162929
+   ├── eval.log       (本次运行完整日志)
+   ├── config.json    (完整配置)
+   ├── results.json   (评估结果)

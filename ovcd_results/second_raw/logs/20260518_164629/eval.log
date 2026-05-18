@@ -1,0 +1,39 @@
+======================================================================
+  Open-Vocabulary Change Detection Evaluation
+======================================================================
+  Dataset:      second_raw
+  Mode:         per_class_bcd
+  Classes (7): ['background', 'water,river,lake,pond,reservoir,stream', 'bare ground,bare soil,barren,dirt,sand', 'low vegetation,grass,lawn,shrub,grassland,meadow', 'tree,trees,forest,woodland,canopy,grove', 'building,roof,house,structure', 'sports field,running track,athletic track,stadium']
+  Change Thresh:0.5 | Presence alpha: 1.0
+  BDWCD:        PER-CLASS (τ={1: 5, 2: 6, 3: 6, 4: 3, 5: 6, 6: 6}, min_area={1: 200, 2: 200, 3: 200, 4: 100, 5: 200, 6: 200}, logit_margin=0.0)
+======================================================================
+[SECONDDataset] Loaded 1694 samples (mode=scd)
+  T1: /archive/hot2/chj/data/datasets/SECOND/test/im1
+  T2: /archive/hot2/chj/data/datasets/SECOND/test/im2
+  Label T1: /archive/hot2/chj/data/datasets/SECOND/test/label1_gray
+  Label T2: /archive/hot2/chj/data/datasets/SECOND/test/label2_gray
+
+🚀 Starting evaluation on 1694 samples...
+
+⏱️  Completed in 6862.2s (4.05s/sample, processed=1694, skipped=0)
+============================================================
+  Open-Vocabulary Change Detection Evaluation (PER_CLASS_BCD)
+============================================================
+  Class-avg IoU: 32.02%
+  Class-avg F1:  47.19%
+------------------------------------------------------------
+  Category                 IoU      F1    Prec     Rec
+------------------------------------------------------------
+  water                  26.1%   41.4%   36.0%   48.6%
+  bare ground            34.8%   51.6%   54.7%   48.9%
+  low vegetation         28.0%   43.7%   51.3%   38.0%
+  tree                   19.4%   32.5%   30.5%   34.7%
+  building               59.1%   74.3%   75.8%   72.9%
+  sports field           24.7%   39.7%   32.3%   51.3%
+------------------------------------------------------------
+  Samples:    1694
+============================================================
+📄 Results saved to ./ovcd_results/second_raw/logs/20260518_164629
+   ├── eval.log       (本次运行完整日志)
+   ├── config.json    (完整配置)
+   ├── results.json   (评估结果)

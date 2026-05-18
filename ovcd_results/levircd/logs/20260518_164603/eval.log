@@ -1,0 +1,32 @@
+======================================================================
+  Open-Vocabulary Change Detection Evaluation
+======================================================================
+  Dataset:      levircd
+  Mode:         bcd
+  Classes (2): ['ground,road,vegetation', 'building,roof,house']
+  Change Thresh:0.5 | Presence alpha: 1.0
+  BDWCD:        GLOBAL (τ=5.0, min_area=150)
+======================================================================
+[LEVIRCDDataset] Loaded 128 samples (mode=bcd)
+  T1: /archive/hot2/chj/data/datasets/levircd/A
+  T2: /archive/hot2/chj/data/datasets/levircd/B
+  Label: /archive/hot2/chj/data/datasets/levircd/label
+
+🚀 Starting evaluation on 128 samples...
+
+⏱️  Completed in 519.5s (4.06s/sample, processed=128, skipped=0)
+============================================================
+  Open-Vocabulary Change Detection Evaluation (BCD)
+============================================================
+  F1 Score:   82.53%
+  IoU:        70.26%
+  Precision:  74.00%
+  Recall:     93.28%
+  OA:         97.99%
+  Kappa:      81.48%
+  Samples:    128
+============================================================
+📄 Results saved to ./ovcd_results/levircd/logs/20260518_164603
+   ├── eval.log       (本次运行完整日志)
+   ├── config.json    (完整配置)
+   ├── results.json   (评估结果)

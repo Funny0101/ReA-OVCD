@@ -41,7 +41,6 @@ ovcd_results*/**/*.tif
 ovcd_results*/**/*.tiff
 ovcd_results*/**/*.bmp
 # Misc
-*.log
 *.tmp
 run.sh
 example/

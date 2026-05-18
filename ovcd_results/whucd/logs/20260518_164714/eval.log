@@ -1,0 +1,32 @@
+======================================================================
+  Open-Vocabulary Change Detection Evaluation
+======================================================================
+  Dataset:      whucd
+  Mode:         bcd
+  Classes (2): ['ground,road,vegetation', 'building,roof,house']
+  Change Thresh:0.35 | Presence alpha: 1.5
+  BDWCD:        GLOBAL (τ=6.0, min_area=100)
+======================================================================
+[WHUCDDataset] Loaded 690 samples (mode=bcd)
+  T1: /archive/hot2/chj/data/datasets/whucd/A
+  T2: /archive/hot2/chj/data/datasets/whucd/B
+  Label: /archive/hot2/chj/data/datasets/whucd/label
+
+🚀 Starting evaluation on 690 samples...
+
+⏱️  Completed in 645.1s (0.93s/sample, processed=690, skipped=0)
+============================================================
+  Open-Vocabulary Change Detection Evaluation (BCD)
+============================================================
+  F1 Score:   90.31%
+  IoU:        82.33%
+  Precision:  88.48%
+  Recall:     92.21%
+  OA:         99.30%
+  Kappa:      89.94%
+  Samples:    690
+============================================================
+📄 Results saved to ./ovcd_results/whucd/logs/20260518_164714
+   ├── eval.log       (本次运行完整日志)
+   ├── config.json    (完整配置)
+   ├── results.json   (评估结果)
