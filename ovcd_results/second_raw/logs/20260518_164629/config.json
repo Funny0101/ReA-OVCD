@@ -1,0 +1,75 @@
+{
+  "run_id": "20260518_164629",
+  "args": {
+    "dataset": "second_raw",
+    "data_root": null,
+    "split": "test",
+    "mode": "per_class_bcd",
+    "sam3_checkpoint": "/archive/hot2/chj/data/model/sam3.pt",
+    "confidence_threshold": null,
+    "classname_path": null,
+    "change_threshold": null,
+    "presence_alpha": null,
+    "use_presence": null,
+    "use_pamr": false,
+    "use_tif_mask": false,
+    "no_postprocess": false,
+    "boundary_tau": null,
+    "pc_tau": null,
+    "slide_stride": null,
+    "slide_crop": null,
+    "save_dir": "./ovcd_results/",
+    "save_vis": false,
+    "max_samples": -1,
+    "verbose": false,
+    "debug_playground_only": false
+  },
+  "cfg": {
+    "dataset": "second_raw",
+    "mode": "per_class_bcd",
+    "data_root": "/archive/hot2/chj/data/datasets/SECOND/test",
+    "class_names": [
+      "background",
+      "water,river,lake,pond,reservoir,stream",
+      "bare ground,bare soil,barren,dirt,sand",
+      "low vegetation,grass,lawn,shrub,grassland,meadow",
+      "tree,trees,forest,woodland,canopy,grove",
+      "building,roof,house,structure",
+      "sports field,running track,athletic track,stadium"
+    ],
+    "confidence_threshold": 0.4,
+    "prob_thd": 0.3,
+    "change_threshold": 0.5,
+    "presence_alpha": 1.0,
+    "use_presence": true,
+    "slide_stride": 0,
+    "slide_crop": 0,
+    "pc_boundary_tau": {
+      "1": 5,
+      "2": 6,
+      "3": 6,
+      "4": 3,
+      "5": 6,
+      "6": 6
+    },
+    "pc_min_change_area": {
+      "1": 200,
+      "2": 200,
+      "3": 200,
+      "4": 100,
+      "5": 200,
+      "6": 200
+    },
+    "pc_sigmoid_scale": 2.0,
+    "pc_logit_margin": 0.0,
+    "postprocess": {
+      "boundary_distance_tau": 3.0,
+      "boundary_sigmoid_scale": 1.5,
+      "use_morphological_opening": true,
+      "opening_kernel_size": 3,
+      "opening_iterations": 1,
+      "use_small_region_removal": true,
+      "min_change_area": 20
+    }
+  }
+}

@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Data & weights
+data/
+pretrained/
+weights/
+
+# Output & results
+work_dirs/
+show_dir/
+figs/
+results.xlsx
+
+# ovcd_results: ignore images, keep JSON
+ovcd_results*/**/*.png
+ovcd_results*/**/*.jpg
+ovcd_results*/**/*.jpeg
+ovcd_results*/**/*.tif
+ovcd_results*/**/*.tiff
+ovcd_results*/**/*.bmp
+# Misc
+*.log
+*.tmp
+run.sh
+example/

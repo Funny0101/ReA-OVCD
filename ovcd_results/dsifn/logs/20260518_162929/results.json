@@ -1,0 +1,35 @@
+{
+  "F1": 67.78515978975655,
+  "IoU": 51.268949598976135,
+  "Precision": 62.27699476267938,
+  "Recall": 74.36221709827838,
+  "OA": 87.98973560333252,
+  "Kappa": 60.474982013606926,
+  "TP": 1589946,
+  "FP": 963077,
+  "FN": 548164,
+  "TN": 9481725,
+  "num_samples": 48,
+  "config": {
+    "run_id": "20260518_162929",
+    "dataset": "dsifn",
+    "mode": "bcd",
+    "change_threshold": 0.3,
+    "presence_alpha": 1.2,
+    "confidence_threshold": 0.3,
+    "use_presence": true,
+    "slide_stride": 0,
+    "slide_crop": 0,
+    "postprocess": "BDWCD",
+    "num_classes": 2,
+    "class_names": [
+      "ground,road,vegetation,farmland",
+      "building,house,roof,urban structure"
+    ],
+    "elapsed_seconds": 99.25029373168945,
+    "num_samples": 48,
+    "num_samples_total": 48,
+    "num_samples_skipped_no_playground": 0,
+    "debug_playground_only": false
+  }
+}

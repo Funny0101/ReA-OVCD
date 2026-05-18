@@ -1,0 +1,52 @@
+{
+  "run_id": "20260518_164603",
+  "args": {
+    "dataset": "levircd",
+    "data_root": null,
+    "split": "test",
+    "mode": "bcd",
+    "sam3_checkpoint": "/archive/hot2/chj/data/model/sam3.pt",
+    "confidence_threshold": null,
+    "classname_path": null,
+    "change_threshold": null,
+    "presence_alpha": null,
+    "use_presence": null,
+    "use_pamr": false,
+    "use_tif_mask": false,
+    "no_postprocess": false,
+    "boundary_tau": null,
+    "pc_tau": null,
+    "slide_stride": null,
+    "slide_crop": null,
+    "save_dir": "./ovcd_results/",
+    "save_vis": false,
+    "max_samples": -1,
+    "verbose": false,
+    "debug_playground_only": false
+  },
+  "cfg": {
+    "dataset": "levircd",
+    "mode": "bcd",
+    "data_root": "/archive/hot2/chj/data/datasets/levircd",
+    "class_names": [
+      "ground,road,vegetation",
+      "building,roof,house"
+    ],
+    "confidence_threshold": 0.3,
+    "prob_thd": 0.0,
+    "change_threshold": 0.5,
+    "presence_alpha": 1.0,
+    "use_presence": true,
+    "slide_stride": 512,
+    "slide_crop": 512,
+    "postprocess": {
+      "boundary_distance_tau": 5.0,
+      "boundary_sigmoid_scale": 2.0,
+      "use_morphological_opening": true,
+      "opening_kernel_size": 3,
+      "opening_iterations": 1,
+      "use_small_region_removal": true,
+      "min_change_area": 150
+    }
+  }
+}
