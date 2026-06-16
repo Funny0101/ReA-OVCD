@@ -4,6 +4,8 @@
 
 </div>
 
+> **IMPORTANT NOTE:** This repository contains code under active peer review. It is made available for review purposes only. Any use, reproduction, or dissemination of the results prior to the official publication of the associated paper is strictly prohibited without the authors' explicit permission.
+
 ## Installation
 
 The environment setup is identical to [SAM 3](https://github.com/facebookresearch/sam3). Simply follow the SAM 3 installation instructions.
