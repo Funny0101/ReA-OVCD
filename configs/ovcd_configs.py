@@ -128,7 +128,17 @@ POSTPROCESS_CONFIGS = {
         opening_iterations=1,
         use_small_region_removal=True,
         min_change_area=150,
-    )
+    ),
+    # SECOND: placeholder (per-class τ/area are in SECOND_RAW_CONFIG's pc_boundary_tau/pc_min_change_area)
+    'second': dict(
+        boundary_distance_tau=5.0,
+        boundary_sigmoid_scale=2.0,
+        use_morphological_opening=True,
+        opening_kernel_size=3,
+        opening_iterations=1,
+        use_small_region_removal=True,
+        min_change_area=200,
+    ),
 }
 
 # ============================================================
