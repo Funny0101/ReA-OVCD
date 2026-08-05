@@ -15,8 +15,8 @@ LEVIR_CD_CONFIG = dict(
         'ground,road,vegetation',
         'building,roof,house',
     ],
-    confidence_threshold=0.3,
-    prob_thd=0.0,
+    confidence_threshold=0.2,
+    prob_thd=0.3,
     change_threshold=0.5,
     presence_alpha=1.0,
     use_presence=True,
@@ -39,8 +39,6 @@ WHU_CD_CONFIG = dict(
     confidence_threshold=0.3,
     prob_thd=0.5,
     change_threshold=0.35,
-    presence_alpha=1.5,
-    use_presence=True,
     slide_stride=0,
     slide_crop=0,
 )
@@ -59,8 +57,6 @@ DSIFN_CONFIG = dict(
     confidence_threshold=0.3,
     prob_thd=0.1,
     change_threshold=0.3,
-    presence_alpha=1.2,
-    use_presence=True,
     slide_stride=0,
     slide_crop=0,
 )
@@ -84,14 +80,11 @@ SECOND_RAW_CONFIG = dict(
     confidence_threshold=0.4,
     prob_thd=0.3,
     change_threshold=0.5,
-    presence_alpha=1.0,
-    use_presence=True,
     slide_stride=0,
     slide_crop=0,
     # class_id: 1=water, 2=ground, 3=low_veg, 4=tree, 5=building, 6=playground
     pc_boundary_tau={1: 5, 2: 6, 3: 6, 4: 3, 5: 6, 6: 6},
     pc_min_change_area={1: 200, 2: 200, 3: 200, 4: 100, 5: 200, 6: 200},
-    pc_sigmoid_scale=2.0,
 )
 
 # ============================================================

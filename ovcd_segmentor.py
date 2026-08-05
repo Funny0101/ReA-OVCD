@@ -227,11 +227,13 @@ class OVCDSegmentor(nn.Module):
         presence_avg = presence_acc / num_patches
         seg_logits_cls = self._aggregate_to_class(preds)
         presence_scores_cls = self._aggregate_presence_to_class(presence_avg)
+        max_vals, pred_label = seg_logits_cls.max(dim=0)
+        pred_label[max_vals < self.prob_thd] = 0
 
         return {
             'seg_logits': preds,
             'seg_logits_cls': seg_logits_cls,
             'presence_scores': presence_avg,
             'presence_scores_cls': presence_scores_cls,
-            'pred_label': seg_logits_cls.argmax(dim=0),
+            'pred_label': pred_label,
         }

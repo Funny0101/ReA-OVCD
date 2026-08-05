@@ -1,5 +1,5 @@
 {
-  "run_id": "20260518_164603",
+  "run_id": "20260720_221208",
   "args": {
     "dataset": "levircd",
     "data_root": null,
@@ -32,8 +32,8 @@
       "ground,road,vegetation",
       "building,roof,house"
     ],
-    "confidence_threshold": 0.3,
-    "prob_thd": 0.0,
+    "confidence_threshold": 0.2,
+    "prob_thd": 0.3,
     "change_threshold": 0.5,
     "presence_alpha": 1.0,
     "use_presence": true,
