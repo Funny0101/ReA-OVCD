@@ -1,10 +1,6 @@
 <div align="center">
 
-# ReA-OVCD: Reliability-Aware Open-Vocabulary Change Detection via Semantic and Spatial Refinement
-
-</div>
-
-> **IMPORTANT NOTE:** This repository contains code under active peer review. It is made available for review purposes only. Any use, reproduction, or dissemination of the results prior to the official publication of the associated paper is strictly prohibited without the authors' explicit permission.
+# ReA-OVCD: Training-Free Open-Vocabulary Change Detection via Semantic-Spatial Reliability Assessment
 
 ## Installation
 
