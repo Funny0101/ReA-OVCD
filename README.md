@@ -2,6 +2,8 @@
 
 # ReA-OVCD: Training-Free Open-Vocabulary Change Detection via Semantic-Spatial Reliability Assessment
 
+<div>
+
 ## Installation
 
 The environment setup is identical to [SAM 3](https://github.com/facebookresearch/sam3). Simply follow the SAM 3 installation instructions.
