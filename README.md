@@ -2,7 +2,8 @@
 
 # ReA-OVCD: Training-Free Open-Vocabulary Change Detection via Semantic-Spatial Reliability Assessment
 
-<div>
+<div/>
+
 
 ## Installation
 
